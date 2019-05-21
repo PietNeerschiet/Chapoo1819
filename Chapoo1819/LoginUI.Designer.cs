@@ -1,6 +1,6 @@
 ﻿namespace Chapoo1819
 {
-    partial class Form1
+    partial class LoginUI
     {
         /// <summary>
         /// Required designer variable.

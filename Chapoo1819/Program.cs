@@ -16,7 +16,7 @@ namespace Chapoo1819
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new LoginUI());
         }
     }
 }

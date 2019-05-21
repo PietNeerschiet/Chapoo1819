@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Chapoo1819
 {
-    public partial class Form1 : Form
+    public partial class LoginUI : Form
     {
-        public Form1()
+        public LoginUI()
         {
             InitializeComponent();
         }
