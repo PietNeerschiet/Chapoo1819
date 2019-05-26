@@ -10,17 +10,26 @@ using System.Windows.Forms;
 
 namespace Chapoo1819
 {
-    public partial class LoginUI : Form
+    public partial class ManagementUI : Form
     {
-        public LoginUI()
+        public ManagementUI()
         {
             InitializeComponent();
         }
 
-        private void btnManagement_Click(object sender, EventArgs e)
+        private void btnTakeOrder_Click(object sender, EventArgs e)
         {
-            ManagementUI managementUI = new ManagementUI();
-            managementUI.Show();
+
+        }
+
+        private void ManagementUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

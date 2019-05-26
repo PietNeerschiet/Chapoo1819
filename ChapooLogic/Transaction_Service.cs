@@ -16,11 +16,11 @@ namespace ChapooLogic
         /// <summary>
         /// Register user with the values from the textboxes
         /// </summary>
-        public void RegisterTransaction(double totalPrice, string comment, int tableID, int employeeID, double totalPaid)
+        public void RegisterTransaction(double totalPrice, string comment, int tableID, int employeeID, double totalPaid, DateTime dateTime)
         {
             try
             {
-                transaction.Db_Create_Order(totalPrice, comment, tableID, employeeID, totalPaid);
+                transaction.Db_Create_Order(totalPrice, comment, tableID, employeeID, totalPaid, dateTime);
             }
             catch (Exception e)
             {

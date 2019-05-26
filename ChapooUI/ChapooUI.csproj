@@ -60,11 +60,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LoginUI.resx">
-      <DependentUpon>LoginUI.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ManagementUI.resx">
       <DependentUpon>ManagementUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUI.resx">
+      <DependentUpon>LoginUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,10 +92,6 @@
     <ProjectReference Include="..\ChapooLogic\ChapooLogic.csproj">
       <Project>{8D5CD80B-EE05-481F-A233-00CED8673EFD}</Project>
       <Name>ChapooLogic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ChapooModel\ChapooModel.csproj">
-      <Project>{CA149235-297F-4ED3-ABE0-18ADADC19B15}</Project>
-      <Name>ChapooModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,7 +13,7 @@ namespace ChapooDAL
 {
     public class Transaction_DAO : Base
     {
-        public void Db_Create_Order(double totalPrice, string comment, int tableID, int employeeID, double totalPaid)
+        public void Db_Create_Order(double totalPrice, string comment, int tableID, int employeeID, double totalPaid, DateTime dateTime)
         {
             string query = "INSERT INTO ORDER(Total_Price, Comment, Table_ID, Employee_ID, Total_Paid) VALUES (@totalPrice, @comment, @tableID, @employeeID, @totalPaid)";
             SqlParameter[] sqlParameters = new SqlParameter[4];
@@ -23,9 +23,8 @@ namespace ChapooDAL
             sqlParameters[3] = (new SqlParameter("@employeeID", employeeID));
             sqlParameters[4] = (new SqlParameter("@totalPaid", totalPaid));
 
-            
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ChapooDatabase"].ConnectionString);
-            conn.Open();
+
+            SqlConnection conn = OpenConnection();
 
             ExecuteEditQuery(query, sqlParameters);
             MessageBox.Show("Transaction saved into database!", "Transaction saving completed");
