@@ -15,10 +15,27 @@ namespace ChapooDAL
         // Requests orderitem food data from the database
         public List<OrderItem> Db_Get_FoodItems(int orderID)
         {
-            string query = "SELECT OrderItem_ID, Quantity, Comment, Status, MenuItem_ID, Time FROM OrderItem WHERE Order_ID = @OrderID AND MenuItem_ID < 19";
+            string query = "SELECT oi.OrderItem_ID, oi.Quantity, oi.Comment, oi.Status, oi.MenuItem_ID, oi.Time FROM OrderItem oi JOIN MenuItem mi ON oi.MenuItem_ID = mi.MenuItem_ID WHERE Order_ID = @OrderID AND Category LIKE '%gerecht%'";
             SqlParameter[] sqlParameters = new SqlParameter[1];
             sqlParameters[0] = (new SqlParameter("@OrderID", orderID));
             return ReadTables(ExecuteSelectQuery(query, sqlParameters));
+        }
+        // Requests orderitem drink data from the database
+        public List<OrderItem> Db_Get_DrinkItems(int orderID)
+        {
+            string query = "SELECT oi.OrderItem_ID, oi.Quantity, oi.Comment, oi.Status, oi.MenuItem_ID, oi.Time FROM OrderItem oi JOIN MenuItem mi ON oi.MenuItem_ID = mi.MenuItem_ID WHERE Order_ID = @OrderID AND Category LIKE '%Alcoholi%'";
+            SqlParameter[] sqlParameters = new SqlParameter[1];
+            sqlParameters[0] = (new SqlParameter("@OrderID", orderID));
+            return ReadTables(ExecuteSelectQuery(query, sqlParameters));
+        }
+        // Changes the status of an orderitem
+        public void Db_Edit_OrderItemStatus(bool newStatus, int orderitemID)
+        {
+            string query = "UPDATE ORDERITEM SET Status = @newStatus WHERE OrderItem_ID = @OrderItemID";
+            SqlParameter[] sqlParameters = new SqlParameter[2];
+            sqlParameters[0] = (new SqlParameter("@newStatus", newStatus));
+            sqlParameters[1] = (new SqlParameter("@OrderItemID", orderitemID));
+            ExecuteEditQuery(query, sqlParameters);
         }
 
         // Adds all orderitems to a list
