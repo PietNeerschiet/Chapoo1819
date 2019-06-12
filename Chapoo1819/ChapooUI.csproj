@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListViewComparer.cs" />
     <Compile Include="ManagementUI.cs">
       <SubType>Form</SubType>
     </Compile>

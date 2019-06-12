@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChapooModel
 {
-    public class Class1
+    public class Table
     {
+        public int TableID { get; set; }
+        public int Capacity { get; set; }
+        public bool InUse { get; set; }
     }
 }

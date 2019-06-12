@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChapooModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,18 @@ namespace Chapoo1819
         public LoginUI()
         {
             InitializeComponent();
-        }
 
+        }
+        Employee currentUser;
         private void btnManagement_Click(object sender, EventArgs e)
         {
-            ManagementUI managementUI = new ManagementUI();
+            // Temporary code before login is finished
+            Employee manager = new Employee();
+            manager.EmployeeType = EmployeeType.Manager;
+            currentUser = manager;
+            // ---------------------------
+
+            ManagementUI managementUI = new ManagementUI(currentUser);
             managementUI.Show();
         }
     }
