@@ -33,7 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,21 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="WaiterDashboardUI.cs">
+    <Compile Include="KitchenBarUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WaiterDashboardUI.Designer.cs">
-      <DependentUpon>WaiterDashboardUI.cs</DependentUpon>
-    </Compile>
-=======
-    <Compile Include="ChapooLogic\Stock_Service.cs" />
->>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
-    <Compile Include="ManagementUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManagementUI.Designer.cs">
-      <DependentUpon>ManagementUI.cs</DependentUpon>
+    <Compile Include="KitchenBarUI.Designer.cs">
+      <DependentUpon>KitchenBarUI.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginUI.cs">
       <SubType>Form</SubType>
@@ -69,35 +58,13 @@
     <Compile Include="LoginUI.Designer.cs">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrderUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OrderUI.Designer.cs">
-      <DependentUpon>OrderUI.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-    <Compile Include="TableOverviewUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TableOverviewUI.Designer.cs">
-      <DependentUpon>TableOverviewUI.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="WaiterDashboardUI.resx">
-      <DependentUpon>WaiterDashboardUI.cs</DependentUpon>
+    <EmbeddedResource Include="KitchenBarUI.resx">
+      <DependentUpon>KitchenBarUI.cs</DependentUpon>
     </EmbeddedResource>
-=======
-    <Compile Include="ViewOrders.cs" />
->>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
     <EmbeddedResource Include="LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManagementUI.resx">
-      <DependentUpon>ManagementUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OrderUI.resx">
-      <DependentUpon>OrderUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -108,9 +75,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TableOverviewUI.resx">
-      <DependentUpon>TableOverviewUI.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

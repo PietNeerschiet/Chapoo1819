@@ -43,17 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employee_Service.cs" />
-    <Compile Include="KitchenBar_Service.cs" />
-<<<<<<< HEAD
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stock_Service.cs" />
-    <Compile Include="Table_Service.cs" />
-=======
+    <Compile Include="MenuItem_DAO.cs" />
     <Compile Include="MenuProduct_Service.cs" />
+    <Compile Include="OrderItem_Service.cs" />
     <Compile Include="Order_Service.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
->>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
-    <Compile Include="Transaction_Service.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ChapooDAL\ChapooDAL.csproj">

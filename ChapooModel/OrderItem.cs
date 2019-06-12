@@ -13,7 +13,6 @@ namespace ChapooModel
         public int Quantity { get; set; }
         public string Comment { get; set; }
         public bool Status { get; set; }
-        public bool Served { get; set; }
         public DateTime Time { get; set; }
     }
 }

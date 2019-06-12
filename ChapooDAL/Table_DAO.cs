@@ -8,19 +8,11 @@ using System.Data;
 using System.Collections.ObjectModel;
 using ChapooModel;
 
-<<<<<<< HEAD
-namespace ChapooDAL {
-    public class Table_DAO : Base {
-
-        // Requests table from the database
-
-=======
 namespace ChapooDAL
 {
     public class Table_DAO : Base
     {
         // Requests table from the database
->>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
         public Table Db_Get_Table(int tableID)
         {
             string query = "SELECT Table_ID, Capacity, InUse FROM [Table] WHERE Table_ID = @tableID";
@@ -28,7 +20,6 @@ namespace ChapooDAL
             sqlParameters[0] = (new SqlParameter("@tableID", tableID));
             return ReadTables(ExecuteSelectQuery(query, sqlParameters));
         }
-
         // Adds current table to a class
         private Table ReadTables(DataTable dataTable)
         {
@@ -61,12 +52,5 @@ namespace ChapooDAL
 
             return tablesInUse;
         }
-<<<<<<< HEAD
-=======
-
-        public void Db_Set_InUse_Table(int tableNumber, bool inUse) {
-            throw new NotImplementedException();
-        }
->>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
     }
 }

@@ -12,9 +12,6 @@ namespace ChapooDAL
 {
     public class MenuProduct_DAO : Base
     {
-<<<<<<< HEAD
-        // Requests menuproduct from the database
-=======
         // Requests all stock data from the database
         public List<MenuProduct> Db_Get_All_Products()
         {
@@ -37,24 +34,15 @@ namespace ChapooDAL
             return ReadTables(ExecuteSelectQuery(query, sqlParameters));
         }
         //Requests a menu product from the database
->>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
         public MenuProduct Db_Get_MenuProduct(int menuitemID)
         {
             string query = "SELECT MenuItem_ID, Name, Description, Stock, Price, Category FROM MenuItem WHERE MenuItem_ID = @menuitemID";
             SqlParameter[] sqlParameters = new SqlParameter[1];
             sqlParameters[0] = (new SqlParameter("@menuitemID", menuitemID));
-<<<<<<< HEAD
-            return ReadTables(ExecuteSelectQuery(query, sqlParameters));
-        }
-
-        // Adds current menuproduct to a class
-        private MenuProduct ReadTables(DataTable dataTable)
-=======
             return ReadTableRow(ExecuteSelectQuery(query, sqlParameters));
         }
         // Adds current menuproduct to a class
         private MenuProduct ReadTableRow(DataTable dataTable)
->>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
         {
             MenuProduct menuproduct = new MenuProduct();
 
@@ -72,8 +60,6 @@ namespace ChapooDAL
             }
             return menuproduct;
         }
-<<<<<<< HEAD
-=======
         // Adds all of stock to a list
         private List<MenuProduct> ReadTables(DataTable dataTable)
         {
@@ -157,7 +143,7 @@ namespace ChapooDAL
                 product.Name = (String)(dr["Name"]);
                 if (dr.IsNull("Description"))
                 {
-                    product.Description = null;
+                    product.Description = " ";
                 }
                 else
                 {
@@ -174,7 +160,7 @@ namespace ChapooDAL
         public List<MenuProduct> Db_Get_Food_MenuProducts() {
             List<MenuProduct> menuProducts = new List<MenuProduct>();
 
-            string query = "SELECT m.MenuItem_ID, m.Name, m.Description, m.stock, m.Category FROM MenuItem m WHERE Category NOT IN ('Alcoholisch', 'nietAlcoholisch');";
+            string query = "SELECT m.MenuItem_ID, m.Name, m.Description, m.stock, m.Category FROM MenuItem m WHERE Category NOT IN ('Alcoholic', 'nonAlcoholic');";
             SqlParameter[] sqlParameters = new SqlParameter[0];
 
             DataTable dataTable = ExecuteSelectQuery(query, sqlParameters);
@@ -193,6 +179,5 @@ namespace ChapooDAL
 
             return menuProducts;
         }
->>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
     }
 }
