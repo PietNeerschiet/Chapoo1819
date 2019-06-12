@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,12 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="WaiterDashboardUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WaiterDashboardUI.Designer.cs">
       <DependentUpon>WaiterDashboardUI.cs</DependentUpon>
     </Compile>
+=======
+    <Compile Include="ChapooLogic\Stock_Service.cs" />
+>>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
     <Compile Include="ManagementUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,8 +69,15 @@
     <Compile Include="LoginUI.Designer.cs">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderUI.Designer.cs">
+      <DependentUpon>OrderUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="TableOverviewUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,11 +87,17 @@
     <EmbeddedResource Include="WaiterDashboardUI.resx">
       <DependentUpon>WaiterDashboardUI.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <Compile Include="ViewOrders.cs" />
+>>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
     <EmbeddedResource Include="LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagementUI.resx">
       <DependentUpon>ManagementUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderUI.resx">
+      <DependentUpon>OrderUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

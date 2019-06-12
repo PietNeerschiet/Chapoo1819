@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChapooModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,6 +53,16 @@ namespace Chapoo1819
 
                 lblError.Show();
             }
+        }
+
+        private void btn_ShowOrderUI_Click(object sender, EventArgs e) {
+            Employee employee = new Employee() {
+                EmployeeID = 29991,
+                Name = "Betsy"
+            };
+
+            OrderUI orderUI = new OrderUI(employee);
+            orderUI.Show();
         }
     }
 }
