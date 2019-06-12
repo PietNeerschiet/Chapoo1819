@@ -18,6 +18,10 @@ namespace ChapooDAL
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadTables(ExecuteSelectQuery(query, sqlParameters));
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
         private List<Order> ReadTables(DataTable dataTable)
         {
             OrderItem_DAO orderitemDAO = new OrderItem_DAO();
@@ -40,5 +44,37 @@ namespace ChapooDAL
             }
             return orders;
         }
+<<<<<<< HEAD
+=======
+
+        public int Db_Get_OrderId(int tableID) {
+            string query = "SELECT Order_ID FROM [Order] WHERE Total_Paid IS NULL AND Table_ID = @TableID";
+            SqlParameter[] sqlParameters = new SqlParameter[1];
+            sqlParameters[0] = (new SqlParameter("@TableID", tableID));
+
+            DataTable datatable = ExecuteSelectQuery(query, sqlParameters);
+
+            if (datatable.Rows.Count < 1) {
+                return 0;
+            }
+
+            return (int)datatable.Rows[0]["Order_ID"];
+        }
+
+        public int Db_Make_Order(int tableID, int employeeID) {
+            string query = "INSERT INTO [Order] VALUES (@Total_Price, @Comment, @Table_ID, @Employee_ID, @Total_Paid, @Order_Date)";
+            SqlParameter[] sqlParameters = new SqlParameter[6];
+            sqlParameters[0] = (new SqlParameter("@Total_Price", DBNull.Value));
+            sqlParameters[1] = (new SqlParameter("@Comment", DBNull.Value));
+            sqlParameters[2] = (new SqlParameter("@Table_ID", tableID));
+            sqlParameters[3] = (new SqlParameter("@Employee_ID", employeeID));
+            sqlParameters[4] = (new SqlParameter("@Total_Paid", DBNull.Value));
+            sqlParameters[5] = (new SqlParameter("@Order_Date", DBNull.Value));
+
+            ExecuteEditQuery(query, sqlParameters);
+
+            return Db_Get_OrderId(tableID);
+        }
+>>>>>>> dadc583cba119b0cd0c27740dac0dd6996f08845
     }
 }
