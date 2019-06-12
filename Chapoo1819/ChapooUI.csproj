@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WaiterDashboardUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaiterDashboardUI.Designer.cs">
+      <DependentUpon>WaiterDashboardUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagementUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableOverviewUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableOverviewUI.Designer.cs">
+      <DependentUpon>TableOverviewUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="WaiterDashboardUI.resx">
+      <DependentUpon>WaiterDashboardUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TableOverviewUI.resx">
+      <DependentUpon>TableOverviewUI.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
