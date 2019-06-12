@@ -49,33 +49,37 @@
             // 
             // pnl_Home
             // 
+            this.pnl_Home.Controls.Add(this.pnl_Stock);
             this.pnl_Home.Controls.Add(this.lblHome);
             this.pnl_Home.Controls.Add(this.btnChangeMenu);
             this.pnl_Home.Controls.Add(this.btnRevenue);
             this.pnl_Home.Controls.Add(this.btnEmployeeManagement);
             this.pnl_Home.Controls.Add(this.btnStock);
             this.pnl_Home.Controls.Add(this.btnTakeOrder);
-            this.pnl_Home.Location = new System.Drawing.Point(1, 5);
+            this.pnl_Home.Location = new System.Drawing.Point(1, 4);
+            this.pnl_Home.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_Home.Name = "pnl_Home";
-            this.pnl_Home.Size = new System.Drawing.Size(579, 747);
+            this.pnl_Home.Size = new System.Drawing.Size(434, 607);
             this.pnl_Home.TabIndex = 0;
             // 
             // lblHome
             // 
             this.lblHome.AutoSize = true;
             this.lblHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHome.Location = new System.Drawing.Point(232, 49);
+            this.lblHome.Location = new System.Drawing.Point(174, 40);
+            this.lblHome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHome.Name = "lblHome";
-            this.lblHome.Size = new System.Drawing.Size(90, 32);
+            this.lblHome.Size = new System.Drawing.Size(71, 26);
             this.lblHome.TabIndex = 5;
             this.lblHome.Text = "Home";
             // 
             // btnChangeMenu
             // 
             this.btnChangeMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangeMenu.Location = new System.Drawing.Point(11, 640);
+            this.btnChangeMenu.Location = new System.Drawing.Point(8, 520);
+            this.btnChangeMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnChangeMenu.Name = "btnChangeMenu";
-            this.btnChangeMenu.Size = new System.Drawing.Size(558, 94);
+            this.btnChangeMenu.Size = new System.Drawing.Size(418, 76);
             this.btnChangeMenu.TabIndex = 4;
             this.btnChangeMenu.Text = "Change menu";
             this.btnChangeMenu.UseVisualStyleBackColor = true;
@@ -83,9 +87,10 @@
             // btnRevenue
             // 
             this.btnRevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRevenue.Location = new System.Drawing.Point(11, 524);
+            this.btnRevenue.Location = new System.Drawing.Point(8, 426);
+            this.btnRevenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRevenue.Name = "btnRevenue";
-            this.btnRevenue.Size = new System.Drawing.Size(558, 94);
+            this.btnRevenue.Size = new System.Drawing.Size(418, 76);
             this.btnRevenue.TabIndex = 3;
             this.btnRevenue.Text = "Revenue";
             this.btnRevenue.UseVisualStyleBackColor = true;
@@ -93,9 +98,10 @@
             // btnEmployeeManagement
             // 
             this.btnEmployeeManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployeeManagement.Location = new System.Drawing.Point(11, 410);
+            this.btnEmployeeManagement.Location = new System.Drawing.Point(8, 333);
+            this.btnEmployeeManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEmployeeManagement.Name = "btnEmployeeManagement";
-            this.btnEmployeeManagement.Size = new System.Drawing.Size(558, 94);
+            this.btnEmployeeManagement.Size = new System.Drawing.Size(418, 76);
             this.btnEmployeeManagement.TabIndex = 2;
             this.btnEmployeeManagement.Text = "Employee management";
             this.btnEmployeeManagement.UseVisualStyleBackColor = true;
@@ -103,9 +109,10 @@
             // btnStock
             // 
             this.btnStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStock.Location = new System.Drawing.Point(11, 298);
+            this.btnStock.Location = new System.Drawing.Point(8, 242);
+            this.btnStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStock.Name = "btnStock";
-            this.btnStock.Size = new System.Drawing.Size(558, 94);
+            this.btnStock.Size = new System.Drawing.Size(418, 76);
             this.btnStock.TabIndex = 1;
             this.btnStock.Text = "Stock";
             this.btnStock.UseVisualStyleBackColor = true;
@@ -114,9 +121,10 @@
             // btnTakeOrder
             // 
             this.btnTakeOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTakeOrder.Location = new System.Drawing.Point(11, 187);
+            this.btnTakeOrder.Location = new System.Drawing.Point(8, 152);
+            this.btnTakeOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTakeOrder.Name = "btnTakeOrder";
-            this.btnTakeOrder.Size = new System.Drawing.Size(558, 94);
+            this.btnTakeOrder.Size = new System.Drawing.Size(418, 76);
             this.btnTakeOrder.TabIndex = 0;
             this.btnTakeOrder.Text = "Take order / change existing order";
             this.btnTakeOrder.UseVisualStyleBackColor = true;
@@ -126,9 +134,10 @@
             // 
             this.pnl_Stock.Controls.Add(this.listViewStock);
             this.pnl_Stock.Controls.Add(this.lbl_Stock);
-            this.pnl_Stock.Location = new System.Drawing.Point(4, 5);
+            this.pnl_Stock.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Stock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_Stock.Name = "pnl_Stock";
-            this.pnl_Stock.Size = new System.Drawing.Size(579, 747);
+            this.pnl_Stock.Size = new System.Drawing.Size(434, 607);
             this.pnl_Stock.TabIndex = 1;
             // 
             // listViewStock
@@ -139,9 +148,10 @@
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5});
-            this.listViewStock.Location = new System.Drawing.Point(11, 109);
+            this.listViewStock.Location = new System.Drawing.Point(8, 89);
+            this.listViewStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listViewStock.Name = "listViewStock";
-            this.listViewStock.Size = new System.Drawing.Size(558, 628);
+            this.listViewStock.Size = new System.Drawing.Size(420, 511);
             this.listViewStock.TabIndex = 1;
             this.listViewStock.UseCompatibleStateImageBehavior = false;
             this.listViewStock.View = System.Windows.Forms.View.Details;
@@ -179,19 +189,20 @@
             // 
             this.lbl_Stock.AutoSize = true;
             this.lbl_Stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Stock.Location = new System.Drawing.Point(12, 14);
+            this.lbl_Stock.Location = new System.Drawing.Point(9, 11);
+            this.lbl_Stock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Stock.Name = "lbl_Stock";
-            this.lbl_Stock.Size = new System.Drawing.Size(86, 32);
+            this.lbl_Stock.Size = new System.Drawing.Size(67, 26);
             this.lbl_Stock.TabIndex = 0;
             this.lbl_Stock.Text = "Stock";
             // 
             // ManagementUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 753);
-            this.Controls.Add(this.pnl_Stock);
+            this.ClientSize = new System.Drawing.Size(436, 612);
             this.Controls.Add(this.pnl_Home);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ManagementUI";
             this.Text = "ManagementUI";
             this.Load += new System.EventHandler(this.ManagementUI_Load);
