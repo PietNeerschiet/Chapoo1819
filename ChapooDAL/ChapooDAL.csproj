@@ -44,12 +44,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base.cs" />
+    <Compile Include="Employee_DAO.cs" />
+    <Compile Include="MenuProduct_DAO.cs" />
+    <Compile Include="OrderItem_DAO.cs" />
+    <Compile Include="Order_DAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stock_DAO.cs" />
+    <Compile Include="Table_DAO.cs" />
     <Compile Include="Transaction_DAO.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ChapooModel\ChapooModel.csproj">

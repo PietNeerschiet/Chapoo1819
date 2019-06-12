@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChapooLogic\Stock_Service.cs" />
     <Compile Include="ManagementUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,13 +60,23 @@
     <Compile Include="LoginUI.Designer.cs">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderUI.Designer.cs">
+      <DependentUpon>OrderUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewOrders.cs" />
     <EmbeddedResource Include="LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagementUI.resx">
       <DependentUpon>ManagementUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderUI.resx">
+      <DependentUpon>OrderUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

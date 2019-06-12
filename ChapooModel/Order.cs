@@ -15,5 +15,6 @@ namespace ChapooModel
         public double TotalPrice { get; set; }
         public string Comment { get; set; }
         public int TotalPaid { get; set; }
+        public DateTime OrderDate { get; set; }
     }
 }
